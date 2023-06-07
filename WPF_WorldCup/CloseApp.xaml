@@ -1,0 +1,45 @@
+﻿<Window x:Class="WPF_WorldCup.CloseApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_WorldCup"
+        mc:Ignorable="d"
+        Title="CloseApp"
+        WindowStartupLocation="CenterScreen"
+        Height="250" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lblClose" Content="Close the App?"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontWeight="Bold"
+               FontSize="28"/>
+
+        <Button Content="Yes" 
+                FontSize="16"
+                FontWeight="bold"
+                HorizontalAlignment="Center"
+                Margin="-100,0,0,0"
+                Grid.Row="1"
+                VerticalAlignment="Center"
+                Width="60" Click="Button_Click"/>
+
+        <Button x:Name="btnNo"
+                Content="No"
+                FontSize="16"
+                FontWeight="bold"
+                HorizontalAlignment="Center" 
+                Width="60"
+                Margin="100,0,0,0"
+                Grid.Row="1"
+                VerticalAlignment="Center" Click="btnNo_Click"/>
+
+
+
+    </Grid>
+</Window>

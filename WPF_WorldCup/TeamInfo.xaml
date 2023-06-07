@@ -1,0 +1,229 @@
+﻿<Window x:Class="WPF_WorldCup.TeamInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_WorldCup"
+        mc:Ignorable="d"
+        Title="TeamInfo" Height="300" Width="300">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetProperty="Width" From="0" To="280" Duration="0:0:0.5" FillBehavior="HoldEnd" AutoReverse="False" />
+                    <DoubleAnimation Storyboard.TargetProperty="Height" From="0" To="380" Duration="0:0:0.8" FillBehavior="HoldEnd" AutoReverse="False"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label
+            x:Name="lblCountry"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Content="Country Info"
+            FontSize="25"
+            Foreground="Black"
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center"
+            Width="auto"
+            />
+
+        <Label
+            Name="lblWinsText"
+            Grid.Row="1"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right" Content="Wins"
+            />
+
+        <Label
+            x:Name="lblLossesText"
+            Grid.Row="2"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right" Content="Losses"
+            />
+
+        <Label
+            x:Name="lblDrawsText"
+            Grid.Row="3"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right" Content="Draws"
+            />
+
+        <Label
+            Name="lblGamesPlayedText"
+            Grid.Row="4"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right" Content="Games Played" 
+            />
+
+        <Label
+            Name="lblPointsText"
+            Grid.Row="5"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right" Content="Points" 
+            />
+
+        <Label
+            x:Name="lblGoalsScoredText"
+            Grid.Row="6"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right" Content="Goals Scored" 
+            />
+
+        <Label
+            x:Name="lblGoalsReceivedText"
+            Grid.Row="7"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right" Content="Goals Received" 
+            />
+
+        <Label
+            x:Name="lblGoalsDifferencesText"
+            Grid.Row="8"
+            
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right" Content="Goals Diff"
+            />
+
+        <Label
+            x:Name="lblWins"
+            Grid.Row="1"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            />
+
+        <Label
+            x:Name="lblLosses"
+            Grid.Row="2"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            />
+
+        <Label
+            x:Name="lblDraws"
+            Grid.Row="3"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            />
+
+        <Label
+            x:Name="lblGamesPlayed"
+            Grid.Row="4"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            />
+
+        <Label
+            x:Name="lblPoints"
+            Grid.Row="5"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            />
+
+        <Label
+            x:Name="lblGoalsScored"
+            Grid.Row="6"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            />
+
+        <Label
+            x:Name="lblGoalsReceived"
+            Grid.Row="7"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            />
+        <Label
+            x:Name="lblGoalsDifferences"
+            Grid.Row="8"
+            Grid.Column="1"
+            Content="0"
+            FontSize="14"
+            Foreground="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Width="auto"/>
+
+        <Button
+            x:Name="btnCloseDialog"
+            Grid.Column="1"
+            Grid.Row="9"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Content="Close Dialog" Click="btnCloseDialog_Click"
+            />
+
+    </Grid>
+</Window>

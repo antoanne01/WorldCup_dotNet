@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\StatsRepository\\StatsRepository.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\CupInfo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\CupInfo.csproj",
+        "projectName": "CupInfo",
+        "projectPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\CupInfo.csproj",
+        "packagesPath": "C:\\Users\\hyperv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hyperv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "PdfSharp": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
+            "itext7.pdfhtml": {
+              "target": "Package",
+              "version": "[4.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\IRepository\\IRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\IRepository\\IRepository.csproj",
+        "projectName": "IRepository",
+        "projectPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\IRepository\\IRepository.csproj",
+        "packagesPath": "C:\\Users\\hyperv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\IRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hyperv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\CupInfo.csproj": {
+                "projectPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\CupInfo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "PdfSharp": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
+            "itext7.pdfhtml": {
+              "target": "Package",
+              "version": "[4.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\StatsRepository\\StatsRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\StatsRepository\\StatsRepository.csproj",
+        "projectName": "StatsRepository",
+        "projectPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\StatsRepository\\StatsRepository.csproj",
+        "packagesPath": "C:\\Users\\hyperv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\StatsRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hyperv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\CupInfo.csproj": {
+                "projectPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\CupInfo\\CupInfo.csproj"
+              },
+              "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\IRepository\\IRepository.csproj": {
+                "projectPath": "C:\\Users\\hyperv\\Downloads\\OwnProject\\WorldCup_WinForm\\IRepository\\IRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "PdfSharp": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.0.0, )"
+            },
+            "itext7.pdfhtml": {
+              "target": "Package",
+              "version": "[4.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

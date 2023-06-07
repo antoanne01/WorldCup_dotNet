@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1FLrWy/wlxtxHiXtNtDCw5p9Pqt0erKP4wUxaWGzIAWZ+bAAP7yUsGTFT0vEwIuMgzoJt8tKUFX1xPfomkF7Mg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\.NET\\OwnProject\\WorldCup_WinForm\\CupRepository\\CupRepository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\restsharp\\110.0.0\\restsharp.110.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

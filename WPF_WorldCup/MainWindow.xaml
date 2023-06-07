@@ -1,0 +1,132 @@
+﻿<Window x:Class="WPF_WorldCup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_WorldCup"
+        mc:Ignorable="d"
+        x:Name="mWindow"
+        Title="MainWindow"
+        WindowStartupLocation="CenterScreen"
+        Height="450" Width="800">
+    <Grid Background="Black">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <ComboBox x:Name="cbNationalTeam" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.RowSpan="2" Grid.Row="1" VerticalAlignment="Top" Height="34" Width="100"/>
+
+
+
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="8">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/footballPitch.png"/>
+            </Grid.Background>
+        </Grid>
+
+        <TextBox x:Name="pickedTeam" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.RowSpan="2" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+
+        <TextBox x:Name="pickedTeamScore" Grid.Column="3" Grid.ColumnSpan="1" HorizontalAlignment="Left" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Margin="60,0,0,0"/>
+
+        <TextBox x:Name="opponentTeamScore" Grid.Column="4" Grid.ColumnSpan="1" HorizontalAlignment="Left" Grid.RowSpan="2" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
+
+        <TextBox x:Name="opponentTeam" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="right" Grid.RowSpan="2" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+
+        <ComboBox x:Name="cbChooseOpponent" Grid.Column="7" Grid.ColumnSpan="1" HorizontalAlignment="Left" Grid.RowSpan="1" Grid.Row="1" VerticalAlignment="top" Height="30" Width="100"/>
+
+        <Button x:Name="btnHomeTeam" Grid.Column="1" Grid.Row="1" Content="Home Team Data" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnHomeTeam_Click"/>
+
+        <Button x:Name="btnAwayTeam" Grid.Column="6" Grid.Row="1" Content="Away Team Data" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnAwayTeam_Click"/>
+
+        <Label Grid.Column="0" FontSize="10"  Content="Choose Home Team" Foreground="White"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Label Grid.Column="7" FontSize="10" Content="Choose Away Team" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <Button x:Name="btnSettings" Grid.Column="6" Content="Settings" FontSize="16" FontWeight="Bold" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" Click="btnSettings_Click"/>
+
+        <Button x:Name="btnCloseDialog" Grid.Column="7" Content="Exit App" FontSize="16" FontWeight="Bold" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" Click="btnCloseDialog_Click"/>
+
+        <Button x:Name="btnHomeTactics" FontSize="12" Grid.Column="3" Content="Display Players" HorizontalAlignment="center" Grid.Row="3" VerticalAlignment="center" Click="btnHomeTactics_Click"/>
+
+        <StackPanel
+            Name="spGoalkeeperHome"
+            Grid.Row="2"
+            Grid.Column="0"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+
+        <StackPanel
+            Name="spDefenderHome"
+            Grid.Row="2"
+            Grid.Column="1"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+
+        <StackPanel
+            Name="spMidfielderHome"
+            Grid.Row="2"
+            Grid.Column="2"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+
+        <StackPanel
+            Name="spForwardHome"
+            Grid.Row="2"
+            Grid.Column="3"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+
+        <StackPanel
+            Name="spForwardGuests"
+            Grid.Row="2"
+            Grid.Column="4"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+
+        <StackPanel
+            Name="spMidfielderGuests"
+            Grid.Row="2"
+            Grid.Column="5"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+
+        <StackPanel
+            Name="spDefenderGuests"
+            Grid.Row="2"
+            Grid.Column="6"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+
+        <StackPanel
+            Name="spGoalkeeperGuests"
+            Grid.Row="2"
+            Grid.Column="7"
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            />
+        <Label Foreground="White" x:Name="lbLoading" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+    </Grid>
+</Window>

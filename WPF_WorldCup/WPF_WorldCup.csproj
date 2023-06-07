@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\footballPitch.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CupInfo\CupInfo.csproj" />
+    <ProjectReference Include="..\FavoritePlayersAPI\FavoritePlayersAPI.csproj" />
+    <ProjectReference Include="..\FormatForFile\FormatForFile.csproj" />
+    <ProjectReference Include="..\ImagesSetup\ImagesSetup.csproj" />
+    <ProjectReference Include="..\IRepository\IRepository.csproj" />
+    <ProjectReference Include="..\NationalTeamAPI\NationalTeamAPI.csproj" />
+    <ProjectReference Include="..\ParseNationalCode\ParseNationalCode.csproj" />
+    <ProjectReference Include="..\Parse_From_File_Library\Parse_From_File_Library.csproj" />
+    <ProjectReference Include="..\StatsRepository\StatsRepository.csproj" />
+    <ProjectReference Include="..\WorldCup_WinForm\WorldCup_WinForm.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\footballPitch.png" />
+  </ItemGroup>
+
+</Project>
